@@ -1,7 +1,9 @@
-const Index = () => (
-	<div>
-		<h1>Hello World!!</h1>
-	</div>
-);
+const dog = "dog"
 
-export default Index;
+const Index = () => (
+  <div>
+    <h1>Hello World!!</h1>
+  </div>
+)
+
+export default Index
