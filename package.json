@@ -19,9 +19,12 @@
   "homepage": "https://github.com/alexis-l8/NextJs_Express_Template#readme",
   "dependencies": {
     "babel-plugin-styled-components": "^1.5.1",
+    "env2": "^2.2.0",
     "express": "^4.16.3",
+    "knex": "^0.14.4",
     "next": "^5.0.0",
     "nodemon": "^1.17.2",
+    "pg": "^7.4.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "styled-components": "^3.2.3"
