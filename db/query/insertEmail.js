@@ -1,8 +1,11 @@
-const config = require("../../knexfile.js")
-const knex = require("knex")(config.development)
+const knex = require('../client.js')
 
-knex("mailing_list")
-  .insert({ email: "no-into@test.com" })
-  .then(function() {
-    knex.destroy()
+const insertEmail = (first_name, last_name, email) => {
+  return knex('mailing_list').insert({
+    first_name,
+    last_name,
+    email
   })
+}
+
+module.exports = insertEmail

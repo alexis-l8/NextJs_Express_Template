@@ -3,7 +3,7 @@ const Index = () => (
     <h1>Hello World!!</h1>
     <p>Insert your email here please</p>
 
-    <form action="/api/mailing-list" method="post">
+    <form action="/api/mailing-list/submit" method="post">
       First Name
       <input type="text" name="first_name" />
       Last Name
