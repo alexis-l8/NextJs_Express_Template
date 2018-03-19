@@ -2,6 +2,8 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const mailingList = require('./mailingList.js')
 
+const port = process.env.PORT || 3000
+
 const server = handle => {
   const app = express()
 
@@ -14,9 +16,9 @@ const server = handle => {
     return handle(req, res)
   })
 
-  app.listen(3000, err => {
+  app.listen(port, err => {
     if (err) throw err
-    console.log('> Ready on https://localhost3000')
+    console.log('> Ready on port %d', port)
   })
 }
 
