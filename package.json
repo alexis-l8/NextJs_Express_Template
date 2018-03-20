@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node start.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon -w start.js start.js",
+    "start": "node start.js -p $PORT",
+    "heroku-postbuild": "next build",
+    "build": "next build",
+    "dev": "nodemon -w start.js start.js -p $PORT",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run"
   },
