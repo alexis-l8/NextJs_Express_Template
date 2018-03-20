@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon -w start.js start.js"
+    "dev": "nodemon -w start.js start.js",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   },
   "repository": {
     "type": "git",
@@ -29,5 +31,8 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "styled-components": "^3.2.3"
+  },
+  "devDependencies": {
+    "cypress": "^2.1.0"
   }
 }
