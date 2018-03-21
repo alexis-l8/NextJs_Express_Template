@@ -5,6 +5,7 @@
   "main": "start.js",
   "engines": { "node:": "9.5.x", "npm": "5.7.1" },
   "scripts": {
+    "prestart": "next build",
     "start": "NODE_ENV=production node start.js -p $PORT",
     "heroku-postbuild": "npm run build",
     "build": "next build",
