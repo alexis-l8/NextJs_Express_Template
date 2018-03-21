@@ -1,4 +1,4 @@
-let config = './config-dev.env'
+const config = require('./config-dev.env')
 require('env2')(config)
 
 const knexfile = {
